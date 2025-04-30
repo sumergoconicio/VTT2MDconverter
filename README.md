@@ -1,4 +1,4 @@
-# VTT Styled Lines to Markdown Converter
+# VTT to Markdown Converter
 
 ### Overview
 This tool batch-converts WebVTT subtitle files (.vtt) in a specified folder to Markdown (.md), extracting only lines that originally contained styling tags (e.g., <c.colorE5E5E5>...</c>). All tags are stripped, duplicates are removed, and the original VTT files are deleted after conversion.
@@ -29,17 +29,6 @@ python VTT2MDconverter.py
 
 Enter the path to your folder when prompted.
 Converted .md files will be saved in the same folder; the original .vtt files will be deleted.
-
-###Example
-Suppose you have the following file structure:
-project_folder/
-├── VTT2MDconverter.py
-├── my_subtitles.vtt
-
-After running the script, you will have:
-project_folder/
-├── VTT2MDconverter.py
-├── my_subtitles.md
 
 ### Customization
 To change which lines are extracted, adjust the styling_tag_pattern in the script.
